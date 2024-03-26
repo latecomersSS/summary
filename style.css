@@ -1,27 +1,56 @@
+/* Định nghĩa kiểu cho danh sách ul */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  list-style-type: none; /* Loại bỏ dấu đầu dòng của các mục danh sách */
+  margin: 0; /* Xóa các margin */
+  padding: 0; /* Xóa các padding */
+  overflow: hidden; /* Xóa tràn nội dung */
+  background-color: #333; /* Màu nền cho thanh điều hướng */
 }
 
-li {
-  float: right;
+/* Định nghĩa kiểu cho mỗi mục danh sách trong thanh điều hướng */
+li .menuItem {
+  float: right; /* Đẩy mỗi mục về phía phải */
 }
 
+/* Định nghĩa kiểu cho các liên kết trong mục danh sách */
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  display: block; /* Hiển thị liên kết như một khối */
+  color: white; /* Màu chữ */
+  text-align: center; /* Căn giữa nội dung */
+  padding: 14px 16px; /* Khoảng cách giữa mục */
+  text-decoration: none; /* Loại bỏ gạch chân */
 }
 
+/* Định nghĩa kiểu cho liên kết khi rê chuột qua */
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #111; /* Thay đổi màu nền */
 }
 
+/* Định nghĩa kiểu cho mục hiện tại được chọn */
 .active {
-  background-color: #04aa6d;
+  background-color: #04aa6d; /* Màu nền cho mục hiện tại */
+}
+
+/* Định nghĩa kiểu cho footer */
+.foot {
+  background-color: #111; /* Màu nền */
+  color: #fff; /* Màu chữ */
+  display: block; /* Hiển thị như một khối */
+  text-align: center; /* Căn giữa nội dung */
+  position: fixed; /* Vị trí cố định */
+  bottom: 0; /* Dính sát dưới cùng */
+  width: 100%; /* Chiều rộng đầy đủ */
+}
+
+/* Định nghĩa kiểu cho đoạn văn bản trong footer */
+.foot p {
+  padding-left: 2rem; /* Khoảng cách bên trái */
+  margin-left: 10; /* Khoảng cách bên trái */
+  float: left; /* Đẩy văn bản về phía trái */
+}
+
+/* Định nghĩa kiểu cho các liên kết trong footer */
+.foot p > a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: #fff; /* Màu chữ */
 }
