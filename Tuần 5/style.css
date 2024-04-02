@@ -1,0 +1,48 @@
+/* Thiết lập màu nền cho .card và .card-body */
+.card,
+.card-body {
+  background-color: #1a1a1a !important;
+}
+
+/* Thiết lập màu nền cho .card-footer */
+.card-footer {
+  background-color: #1a1a1a !important;
+}
+
+/* Thiết lập chia đường ngang */
+hr {
+  color: white;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Thiết lập màu chữ cho .text-muted */
+.text-muted {
+  color: rgb(98, 35, 98) !important; /* Đổi màu tùy ý */
+}
+
+/* Thiết lập màu nền và màu chữ chung cho body */
+body {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+/* Thiết lập font chữ */
+.font-family {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Thiết lập kích thước cho tiêu đề chính */
+.main-title {
+  font-size: larger;
+}
+
+/* Thiết lập độ nét chữ */
+.display-1 {
+  padding-top: 5rem;
+  font-weight: bold;
+}
