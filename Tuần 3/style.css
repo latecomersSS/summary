@@ -1,32 +1,64 @@
+/* Bước 1: Định dạng cho sản phẩm card */
 .product-card {
-  border: 1px solid #ddd;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 20px auto;
-  padding: 10px;
-  text-align: center;
+  border: 1px solid #ddd; /* Định dạng viền của sản phẩm */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng đổ */
+  width: 300px; /* Đặt chiều rộng cho sản phẩm */
+  margin: 20px auto; /* Canh giữa sản phẩm theo chiều ngang */
+  padding: 10px; /* Tạo khoảng cách bên trong sản phẩm */
+  text-align: center; /* Căn giữa nội dung trong sản phẩm */
 }
 
+/* Bước 2: Định dạng cho hình ảnh sản phẩm */
 .product-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: 100%; /* Đặt chiều rộng của hình ảnh là 100% của phần tử cha */
+  height: auto; /* Tự động tính toán chiều cao để duy trì tỉ lệ */
+  border-radius: 5px; /* Bo góc cho hình ảnh */
+}
+.product-image:hover {
+  transform: scale(1.2, 1.2); /*Phóng to hình ảnh lên 120% theo cả hai trục*/
 }
 
+/* Bước 3: Định dạng cho tiêu đề sản phẩm */
 .product-title {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 1.5em;
-  font-weight: bold;
+  margin-top: 10px; /* Khoảng cách từ trên xuống tiêu đề */
+  margin-bottom: 5px; /* Khoảng cách từ tiêu đề xuống phần mô tả */
+  font-size: 1.5em; /* Kích thước chữ của tiêu đề */
+  font-weight: bold; /* Chữ đậm cho tiêu đề */
 }
 
+/* Bước 4: Định dạng cho mô tả sản phẩm */
 .product-description {
-  margin-bottom: 10px;
-  font-size: 0.8em;
-  color: #666;
+  margin-bottom: 10px; /* Khoảng cách từ mô tả xuống giá sản phẩm */
+  font-size: 0.8em; /* Kích thước chữ của mô tả */
+  color: #666; /* Màu chữ của mô tả */
 }
 
+/* Bước 5: Định dạng cho giá sản phẩm */
 .product-price {
-  font-weight: bold;
-  font-size: 1.2em;
+  padding-left: 1em;
+  font-weight: bold; /* Chữ đậm cho giá sản phẩm */
+  font-size: 1.2em; /* Kích thước chữ của giá sản phẩm */
+}
+
+/* Bước 6: Định dạng cho nút */
+.product-button {
+  background-color: #007bff; /* Màu nền của nút */
+  color: #fff; /* Màu chữ của nút */
+  border: none; /* Không có viền */
+  padding: 1em; /* Kích thước nút */
+  border-radius: 5px; /* Bo góc cho nút */
+  cursor: pointer; /* Biến con trỏ thành bàn tay khi di chuột qua */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+/* Bước 7: Định dạng khi di chuột qua nút */
+.product-button:hover {
+  background-color: #0056b3; /* Màu nền thay đổi khi di chuột qua */
+}
+
+/* Bước 8: Định dạng cho phần footer của sản phẩm */
+.product-footer {
+  display: flex; /* Hiển thị các phần tử trong cùng một hàng */
+  justify-content: space-between; /* Các phần tử sẽ được căn đều và cách nhau một khoảng */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
 }
